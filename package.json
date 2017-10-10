@@ -1,0 +1,22 @@
+{
+  "name": "learnyounode",
+  "version": "1.0.0",
+  "description": "Nodes Scholl learnyounode",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelMLMacedo/learnyounode.git"
+  },
+  "author": "RafaelMLMacedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelMLMacedo/learnyounode/issues"
+  },
+  "homepage": "https://github.com/RafaelMLMacedo/learnyounode#readme",
+  "dependencies": {
+    "bl": "^1.2.1",
+    "strftime": "^0.10.0"
+  }
+}

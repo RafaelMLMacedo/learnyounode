@@ -4,7 +4,7 @@ const bl = require('bl');
 const http = require('http');
 
 function print() {
-	for(result of results)
+	for(let result of results)
 		console.log(result)
 }
 
@@ -14,7 +14,7 @@ function httpGet(index) {
 	http.get(urls[index], response => {
 		response.pipe(bl((err, data) => {
 			if (err)
-				return console.error(err)
+				return console.error(err);
 
 			results[index] = data.toString();
 			count++;
@@ -26,6 +26,6 @@ function httpGet(index) {
 	});
 }
 
-for(index in urls) {
+for(let index in urls) {
 	httpGet(index);
 }

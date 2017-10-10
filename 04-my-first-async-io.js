@@ -1,12 +1,13 @@
 let fs = require('fs');
 
-let buffer = fs.readFile(process.argv[2], 'utf8', function(err, data) {
-	if (err)
-		throw err;
+// Async, instead of readFileSync
+fs.readFile(process.argv[2], 'utf8', (err, data) => {
+	if (err) return console.error(err);
+
 	console.log(data.split('\n').length -1);
 });
 
-/*
+/* NodeSchool solution
 var fs = require('fs')
 var file = process.argv[2]
 
