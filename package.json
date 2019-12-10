@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/RafaelMLMacedo/learnyounode#readme",
   "dependencies": {
-    "bl": "^1.2.1",
+    "bl": "^4.0.0",
     "strftime": "^0.10.0"
   }
 }
